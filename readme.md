@@ -1,9 +1,9 @@
 # url shortener
 ## To run this backend application:
 
-'''nodejs
+``` nodejs
 npm i && npm run dev
-'''
+```
 
 ## TODO
 * url validation
