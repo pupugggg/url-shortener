@@ -3,12 +3,12 @@ const urlSchema = new mongoose.Schema(
   {
     url: {
       type: String,
-      required: [true, 'please add a shortenedUrl'],
+      required: [true, 'please add a url'],
       unique: true,
     }
   },
   {
-    timestamps: true,
+    timestamps:true,
   }
 )
 
