@@ -4,8 +4,11 @@
 ``` nodejs
 npm i && npm run dev
 ```
+## to run unit testing:
+``` nodejs
+npm test
+```
 
 ## TODO
-* url validation
 * traffic control
 * TTL(expire time control)
