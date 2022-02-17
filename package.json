@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha --require should -R spec --ui bdd",
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "mocha": "^9.2.0",
+    "mocha-logger": "^1.0.7",
     "nodemon": "^2.0.15",
     "should": "^13.2.3"
   }

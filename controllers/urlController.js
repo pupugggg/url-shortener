@@ -7,7 +7,7 @@ const shortenUrl =asyncHandler(async (req,res)=>{
     // check if uri is valid
     if(! validUrl.isWebUri(url)){
         res.status(400)
-        throw new Error("Url is not valid.")
+        throw new Error("Invalid url")
         return
     }
     const isCollision = await urlModel.findOne({url:url})
@@ -36,6 +36,7 @@ const redirectById =asyncHandler(async (req,res) =>{
     res.status(200).json(targetUrl)
 })
 
+// for unit testing should be removed in the furture
 const clearDb = asyncHandler(async (req,res)=>{
     const result = await urlModel.deleteMany({})
     res.status(200).json(result)
