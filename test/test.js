@@ -109,8 +109,8 @@ describe('urlController.js', () => {
 describe('urlController.js', () => {
     describe('#redirectById()', () => {
         it('should return a json that conatains valid url, id and status code as same as the shortened url added before.', async () => {
-            const expectedUrl = 'https://www.youtube.com/rgerg'
-            const expectedStatus = 200
+            const expectedUrl = 'https://www.google.com.tw/'
+            const expectedStatus =  200
             const res = await axios({
                 method: 'post',
                 url: 'http://localhost:5000/api/v1/urls',
@@ -125,9 +125,9 @@ describe('urlController.js', () => {
                 data: { url,_id },
                 status,
             } = { ...res }
-            const firstUrl = url
             const firstId = _id
             const firstStatus = status
+            firstStatus.should.equal(200)
             const secondRes = await axios({
                 method: 'get',
                 url: `http://localhost:5000/${firstId}`,
@@ -136,14 +136,9 @@ describe('urlController.js', () => {
                 },
             })
             var {
-                data: { url,_id },
-                status,
+                status
             } = { ...secondRes }
-            const SecondUrl = url
-            const SecondId = _id
             const SecondStatus = status
-            SecondUrl.should.equal(firstUrl)
-            SecondId.should.equal(SecondId)
             SecondStatus.should.equal(expectedStatus)
         })
     })

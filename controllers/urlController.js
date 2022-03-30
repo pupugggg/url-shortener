@@ -33,7 +33,8 @@ const redirectById =asyncHandler(async (req,res) =>{
         res.status(400)
         throw new Error('Url not found')
     }
-    res.status(200).json(targetUrl)
+    const {url} = targetUrl
+    res.status(301).redirect(url)
 })
 
 // for unit testing should be removed in the furture
