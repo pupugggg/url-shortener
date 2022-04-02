@@ -5,11 +5,8 @@ const urlSchema = new mongoose.Schema(
       type: String,
       required: [true, 'please add a url'],
       unique: true,
-    }
-  },
-  {
-    timestamps:true,
+    },
+    createdAt: { type: Date, expires: '30d', default: Date.now }
   }
 )
-
 module.exports = mongoose.model('Url', urlSchema)
