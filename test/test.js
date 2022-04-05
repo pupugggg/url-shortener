@@ -1,6 +1,5 @@
 var should = require('should')
 const axios = require('axios')
-// const mongoose =require('mongoose')
 var mlog = require('mocha-logger')
 beforeEach(async () => {
     await axios({
@@ -8,7 +7,6 @@ beforeEach(async () => {
         url: 'http://localhost:5000/',
     })
 })
-
 describe('urlController.js', () => {
     describe('#shortenUrl()', () => {
         it('should return a json that conatains valid url, id and status code.', async () => {

@@ -8,7 +8,5 @@ npm i && npm run dev
 ``` nodejs
 npm test
 ```
-
-## TODO
-* traffic control
-* TTL(expire time control)
+## system archetechture
+![alt text](./pic/System Diagram.drawio.png)

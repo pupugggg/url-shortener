@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
-
+/** @description Connect to mongoDB Altas
+ */
 const connectDB = async ()=>{
     try{
         const conn = await mongoose.connect(process.env.MONGO_URI)

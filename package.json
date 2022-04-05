@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nyc mocha --require should -R spec --ui bdd",
+    "test": "mocha --require should -R spec --ui bdd",
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
@@ -17,13 +17,13 @@
     "express": "^4.17.2",
     "express-async-handler": "^1.2.0",
     "mongoose": "^6.2.1",
+    "mongoose-lifecycle": "^1.0.0",
     "valid-url": "^1.0.9"
   },
   "devDependencies": {
     "mocha": "^9.2.0",
     "mocha-logger": "^1.0.7",
     "nodemon": "^2.0.15",
-    "nyc": "^15.1.0",
     "should": "^13.2.3"
   }
 }
