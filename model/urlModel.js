@@ -11,7 +11,7 @@ const urlSchema = new mongoose.Schema({
     expireAt: {
         type: Date,
         default: null,
-        expires:"24h"
+        expires: 3600*24
     },
 })
 urlSchema.index({ expireAt: 1 }, { expireAfterSeconds: 0 })

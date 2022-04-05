@@ -22,7 +22,7 @@ npm test
 
 ## use case
 1. /api/v1/urls
-![u1](./pic/usecase_1.png)
+![u1](./pic/usecase_1_1.png)
 2. /:id
 ![u2](./pic/usecase_2.png)
 
