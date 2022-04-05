@@ -18,7 +18,7 @@ npm test
     6. middlewares: Define middlewares like Error handler.
     7. test: define test cases.
 ### system archetechture graph
-    ![sysArch](./pic/SystemDiagramWBG.png)
+![sysArch](./pic/SystemDiagramWBG.png)
 
 ## use case
 1. /api/v1/urls
