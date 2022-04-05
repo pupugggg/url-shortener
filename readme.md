@@ -9,4 +9,4 @@ npm i && npm run dev
 npm test
 ```
 ## system archetechture
-![alt text](./pic/System Diagram.drawio.png)
+![alt text](./pic/SystemDiagram.png)
