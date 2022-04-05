@@ -9,4 +9,10 @@ npm i && npm run dev
 npm test
 ```
 ## system archetechture
-![alt text](./pic/SystemDiagram.png)
+![sysArch](./pic/SystemDiagramWBG.png)
+
+## use case
+### /api/v1/urls
+![u1](./pic/usecase_1.png)
+### /:id
+![u2](./pic/usecase_2.png)
